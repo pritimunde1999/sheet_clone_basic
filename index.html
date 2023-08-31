@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+
+    <header>
+        <div id="selected-cell" style="text-align: center;"></div>
+        <button class="btn" id="boldbtn">B</button>
+        <button class="btn" id="italicbtn">I</button>
+        <button class="btn" id="underlinebtn">U</button>
+
+        <button class="btn" id="align-left"><span class="material-symbols-outlined">format_align_left</span></button>
+        <button class="btn" id="align-center"><span class="material-symbols-outlined">format_align_center</span></button>
+        <button class="btn" id="align-right"><span class="material-symbols-outlined">format_align_right</span></button>
+
+        <select id="font_family">
+            <option value="sans-serif">Sans Serif</option>
+            <option value="serif">Serif</option>
+            <option value="cursive">Cursive</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="monospace">Monospace</option>
+        </select>
+
+        <select id="font_size">
+            <option value="10px">10</option>
+            <option value="12px">12</option>
+            <option value="14px">14</option>
+            <option value="16px">16</option>
+            <option value="18px">18</option>
+        </select>
+
+        <label for="backColor">Background Color</label>
+        <input id="backColor" type="color">
+
+        <label for="textColor">Text Color</label>
+        <input id="textColor" type="color">
+
+        <div id="container-cpc">
+            <span id="copy" class="material-symbols-outlined">file_copy</span>
+            <span id="paste" class="material-symbols-outlined">content_paste</span>
+            <span id="cut" class="material-symbols-outlined">content_cut</span>
+        </div>
+
+        <span id="download" onclick="downloadMatrix()" class="material-symbols-outlined">download</span>
+        <input id="upload" type="file" accept=".json" />
+    </header>
+
+  <div id="table-container">
+    <table>
+        <thead>
+            <tr id="head-row">
+              <th style="min-width:30px !important;"></th>
+            </tr>
+        </thead>
+
+        <tbody id="table-body">
+            
+        </tbody>
+    </table>
+</div>
+
+    <footer>
+        <div id="sheet-container">
+           <button class="active" id="sheet-1" onclick="viewSheet(event)">Sheet 1</button>
+           <button id="add-sheet">+</button>
+        </div>
+    </footer>
+
+    <script src="./code.js"></script>
+</body>
+</html>

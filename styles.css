@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+}
+
+#table-container{
+    max-height: calc(100vh - 70px); /* Adjust the height according to your needs */
+    overflow: auto;
+   
+}
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
+td,th{
+    min-width: 80px; 
+    border: 1px solid #e7e3e3;
+    
+}
+
+th{
+    background-color: #f9f9f9;
+}
+
+tbody th{
+    min-width: 30px !important; 
+}
+
+header{
+    display: flex;
+    gap: 10px;
+}
+#selected-cell{
+    width:80px;
+    height: 25px;
+   
+}
+
+.btn{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: #f9f9f9 !important;
+}
+
+.btn span{
+    font-size: 17px;
+}
+
+#boldbtn{
+    font-weight: bold;
+}
+
+#italicbtn{
+   
+    font-style: italic;
+}
+
+#underlinebtn{ 
+    text-decoration: underline;
+    
+}
+
+#font_family{
+    width:100px;
+}
+
+#font-family:focus{
+    outline: #d5d1d1;
+}
+#font_size{
+    width:50px;
+}
+
+#container-cpc{
+    display: flex;
+    gap:20px;
+    margin-left: 30px;
+}
+
+span{
+    cursor: pointer;
+}
+
+span:hover{
+    background-color: #f9f9f9 !important;
+}
+
+#sheet-container{
+    background-color: #f2f2f2;
+}
+
+#sheet-container button{
+    border : none;
+    cursor: pointer;
+    font-size: 20px;
+    padding:8px;
+}
+
+.active{
+    background-color: white;
+    border:1px solid #d5d1d1 !important;
+    border-top: white !important;
+    border-radius: 4px;
+}
+
+#sheet-container button:hover{
+    font-weight: bold;
+}
+
+#add-sheet:hover{
+   background-color: white !important;
+   border-radius: 4px;
+}
